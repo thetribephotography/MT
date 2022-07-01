@@ -1,0 +1,28 @@
+{
+  "name": "user-management-tool",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js",
+    "migrate": "npx sequelize-cli db:migrate --url mysql://root:@127.0.0.1:3306/mtdb",
+    "migration": "npx sequelize-cli migration:create --name create_product_table",
+    "model_generate": "npx sequelize-cli model:generate --name user --attributes email:string,password:string"
+  },
+  "author": "Dahnthebadguy",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.20.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16",
+    "sequelize-cli": "^6.4.1"
+  }
+}
