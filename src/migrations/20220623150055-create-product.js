@@ -8,19 +8,27 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      product_name: {
+      patient_name: {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      product_model: {
+      gender: {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      buy_price: {
+      age: {
         type: Sequelize.INTEGER,
         allowNull: false,
       },
-      sell_price: {
+      dosage_remaining: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+      },
+      dosage_collected: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+      },
+      viral_level: {
         type: Sequelize.INTEGER,
         allowNull: false,
       },

@@ -14,10 +14,12 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   Product.init({
-    product_name: DataTypes.STRING,
-    product_model: DataTypes.STRING,
-    buy_price: DataTypes.INTEGER,
-    sell_price: DataTypes.INTEGER
+    patient_name: DataTypes.STRING,
+    gender: DataTypes.STRING,
+    age: DataTypes.INTEGER,
+    dosage_remaining: DataTypes.INTEGER,
+    dosage_collected: DataTypes.INTEGER,
+    viral_level: DataTypes.INTEGER,
   }, {
     underscored: true,
     sequelize,
