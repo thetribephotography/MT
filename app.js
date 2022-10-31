@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const db = require('./src/models/index')
 
 const app = express();
-const port = process.env.PORT || 5700;
+const port = process.env.ACCESS_PORT || 5700;
 
 
 //passing middlewear
